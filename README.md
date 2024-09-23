@@ -36,3 +36,10 @@ Brain-progresiion:
 ### `game win`: <a href="https://asciinema.org/a/1Wa8Tq4qZugXUn23TKZDbjb08" target="_blank"><img src="https://asciinema.org/a/1Wa8Tq4qZugXUn23TKZDbjb08.svg" /></a>
 
 ### `lose game` : <a href="https://asciinema.org/a/1WSxbliq2EQOHmGIukpxLnN7c" target="_blank"><img src="https://asciinema.org/a/1WSxbliq2EQOHmGIukpxLnN7c.svg" /></a>
+
+Игра "Простое ли число?" 
+Brain-prime:
+
+### `game win`:  <a href="https://asciinema.org/a/nuC7HKbLv9acY9SyzvtzIGlLK" target="_blank"><img src="https://asciinema.org/a/nuC7HKbLv9acY9SyzvtzIGlLK.svg" /></a>
+
+### `lose game` :  <a href="https://asciinema.org/a/pPenQvz1J6e3v2BbqunMTPu8v" target="_blank"><img src="https://asciinema.org/a/pPenQvz1J6e3v2BbqunMTPu8v.svg" /></a>
