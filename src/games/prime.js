@@ -3,7 +3,7 @@ import { randomInteger } from '../funcInteger.js';
 
 const description = '"yes" if given number is prime. Otherwise answer "no"';
 
-const minInteger = 0;
+const minInteger = 1;
 const maxInteger = 9;
 
 const isPrime = (num) => {
