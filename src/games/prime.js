@@ -18,7 +18,7 @@ const isPrime = (num) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const question = randomInteger(minInteger, maxInteger);
+  const question = randomInteger(minInteger, maxInteger).toString();
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return { question, correctAnswer };
 };
