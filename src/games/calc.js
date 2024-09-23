@@ -19,7 +19,7 @@ const getQuestionAndAnswer = () => {
   return { question, correctAnswer };
 };
 
-const calculator = (a, b, operator) => {
+const calculate = (a, b, operator) => {
   switch (operator) {
     case '+':
       return a + b;
