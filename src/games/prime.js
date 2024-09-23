@@ -1,6 +1,10 @@
 import game from '../index.js';
+import { randomInteger } from '../funcInteger.js';
 
 const description = '"yes" if given number is prime. Otherwise answer "no"';
+
+const minInteger = 0;
+const maxInteger = 9;
 
 const isPrime = (num) => {
   // Проверяем, является ли число меньше 2
@@ -16,13 +20,8 @@ const isPrime = (num) => {
   return true; // Если не нашлось делителей, то число простое
 };
 
-function randomInteger(min, max) {
-  const rand = min + Math.random() * (max - min + 1);
-  return Math.floor(rand);
-}
-
 const getQuestionAndAnswer = () => {
-  const question = randomInteger(1, 9);
+  const question = randomInteger(minInteger, maxInteger);
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return { question, correctAnswer };
 };
