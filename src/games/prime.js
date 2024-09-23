@@ -7,17 +7,14 @@ const minInteger = 0;
 const maxInteger = 9;
 
 const isPrime = (num) => {
-  // Проверяем, является ли число меньше 2
-  if (num < 2) return false;
+  if (num <= 1) return false;
 
-  // Проверяем делимость чисел от 2 до корня из num
-  for (let i = 2; i <= Math.sqrt(num); i++) {
-    if ((i !== num) && (num % i === 0)) {
-      return false; // Если делится на i, то не простое
+  for (let i = 2; i <= Math.sqrt(num); i += 1) {
+    if (num % i === 0) {
+      return false;
     }
   }
-
-  return true; // Если не нашлось делителей, то число простое
+  return true;
 };
 
 const getQuestionAndAnswer = () => {
