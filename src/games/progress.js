@@ -17,7 +17,7 @@ const getQuestionAndAnswer = () => {
   const hiddenPosition = Math.floor(Math.random() * num.length);
   const hiddenNum = num[hiddenPosition];
   num[hiddenPosition] = '..';
-  const question = `${num}`;
+  const question = `${num.join(' ')}`;
   const correctAnswer = hiddenNum.toString();
   return { question, correctAnswer };
 };
