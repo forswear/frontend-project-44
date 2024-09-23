@@ -39,6 +39,7 @@ Brain-progresiion:
 
 Игра "Простое ли число?" 
 Brain-prime:
+===========
 
 ### `game win`:  <a href="https://asciinema.org/a/nuC7HKbLv9acY9SyzvtzIGlLK" target="_blank"><img src="https://asciinema.org/a/nuC7HKbLv9acY9SyzvtzIGlLK.svg" /></a>
 
