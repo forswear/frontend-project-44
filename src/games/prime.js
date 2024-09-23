@@ -1,7 +1,7 @@
 import game from '../index.js';
 import { randomInteger } from '../funcInteger.js';
 
-const description = '"Answer yes" if given number is prime. Otherwise answer "no"';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const minInteger = 1;
 const maxInteger = 9;
