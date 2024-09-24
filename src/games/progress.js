@@ -15,8 +15,8 @@ const maxRandomNumber = 100;
 const minRandomNumber = 10;
 
 const getQuestionAndAnswer = () => {
-  const startNum = Math.floor(Math.random() * maxRandomNumber);
-  const difference = Math.floor(Math.random() * minRandomNumber) + 1;
+  const startNum = getRandomInteger(0, maxRandomNumber - 1);
+  const difference = getRandomInteger(0, minRandomNumber) + 1;
   const progression = startGetProgression(startNum, difference);
   const hiddenPosition = getRandomInteger(0, progression.length - 1);
   const hiddenNum = progression[hiddenPosition];
