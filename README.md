@@ -22,7 +22,7 @@ _git clone https://github.com/forswear/frontend-project-44_
 ### Перейдите в директорию проекта: 
 _cd frontend-project-44_
 ### Установите зависимости для работы проекта: 
-_npm init_
+_npm install_
 
 ---
 
