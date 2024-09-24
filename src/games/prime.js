@@ -1,12 +1,12 @@
-import game from '../index.js';
-import { randomInteger } from '../funcInteger.js';
+import startGame from '../index.js';
+import { getRandomInteger } from '../utils.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const minInteger = 1;
 const maxInteger = 9;
 
-const isPrime = (num) => {
+const startIsPrime = (num) => {
   if (num <= 1) return false;
 
   for (let i = 2; i <= Math.sqrt(num); i += 1) {
@@ -18,11 +18,11 @@ const isPrime = (num) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const question = randomInteger(minInteger, maxInteger).toString();
-  const correctAnswer = isPrime(question) ? 'yes' : 'no';
+  const question = getRandomInteger(minInteger, maxInteger).toString();
+  const correctAnswer = startIsPrime(question) ? 'yes' : 'no';
   return { question, correctAnswer };
 };
 
 export default () => {
-  game(description, getQuestionAndAnswer);
+  startGame(description, getQuestionAndAnswer);
 };

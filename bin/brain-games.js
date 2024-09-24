@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import helloQuest from '../src/cli.js';
+import startHelloQuest from '../src/cli.js';
 
-helloQuest();
+startHelloQuest();

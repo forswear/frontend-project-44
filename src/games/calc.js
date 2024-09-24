@@ -1,5 +1,5 @@
-import game from '../index.js';
-import { randomInteger, randomSymbol } from '../funcInteger.js';
+import startGame from '../index.js';
+import { getRandomInteger, getRandomSymbol } from '../utils.js';
 
 const description = 'What is the result of the expression?';
 
@@ -21,14 +21,14 @@ const calculate = (a, b, operator) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const num1 = randomInteger(minInteger, maxInteger);
-  const num2 = randomInteger(minInteger, maxInteger);
-  const operator = operators[randomSymbol(operators)];
+  const num1 = getRandomInteger(minInteger, maxInteger);
+  const num2 = getRandomInteger(minInteger, maxInteger);
+  const operator = operators[getRandomSymbol(operators)];
   const question = `${num1} ${operator} ${num2}`;
   const correctAnswer = calculate(num1, num2, operator).toString();
   return { question, correctAnswer };
 };
 
 export default () => {
-  game(description, getQuestionAndAnswer);
+  startGame(description, getQuestionAndAnswer);
 };
